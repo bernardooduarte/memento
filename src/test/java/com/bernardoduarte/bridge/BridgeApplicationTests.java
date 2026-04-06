@@ -1,13 +1,14 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FactorymethodApplicationTests {
+class BridgeApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
+

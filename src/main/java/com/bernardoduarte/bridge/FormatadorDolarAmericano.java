@@ -1,4 +1,4 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 public class FormatadorDolarAmericano extends FormatadorValor {
 
@@ -7,3 +7,4 @@ public class FormatadorDolarAmericano extends FormatadorValor {
         return String.format("US$ %.2f", valor);
     }
 }
+

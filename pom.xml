@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bernardoduarte</groupId>
-	<artifactId>factorymethod</artifactId>
+	<artifactId>bridge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
@@ -52,3 +52,4 @@
 	</build>
 
 </project>
+

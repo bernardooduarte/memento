@@ -1,9 +1,9 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 public class DolarAmericanoFactory extends TaxaCambioFactory {
     @Override
     public TaxaCambio criarTaxa(double valorEmReais) {
-        return new DolarAmericano(valorEmReais);
+        return new DolarAmericano(valorEmReais, criarFormatadorValor());
     }
 
     @Override
@@ -11,3 +11,4 @@ public class DolarAmericanoFactory extends TaxaCambioFactory {
         return new FormatadorDolarAmericano();
     }
 }
+

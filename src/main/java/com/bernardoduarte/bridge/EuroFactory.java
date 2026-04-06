@@ -1,9 +1,9 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 public class EuroFactory extends TaxaCambioFactory {
     @Override
     public TaxaCambio criarTaxa(double valorEmReais) {
-        return new Euro(valorEmReais);
+        return new Euro(valorEmReais, criarFormatadorValor());
     }
 
     @Override
@@ -11,3 +11,4 @@ public class EuroFactory extends TaxaCambioFactory {
         return new FormatadorEuro();
     }
 }
+

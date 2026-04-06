@@ -1,9 +1,9 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 public class LibraEsterlinaFactory extends TaxaCambioFactory {
     @Override
     public TaxaCambio criarTaxa(double valorEmReais) {
-        return new LibraEsterlina(valorEmReais);
+        return new LibraEsterlina(valorEmReais, criarFormatadorValor());
     }
 
     @Override
@@ -11,3 +11,4 @@ public class LibraEsterlinaFactory extends TaxaCambioFactory {
         return new FormatadorLibraEsterlina();
     }
 }
+

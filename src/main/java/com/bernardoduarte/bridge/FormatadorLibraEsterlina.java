@@ -1,4 +1,4 @@
-package com.bernardoduarte.factorymethod;
+package com.bernardoduarte.bridge;
 
 public class FormatadorLibraEsterlina extends FormatadorValor {
 
@@ -7,3 +7,4 @@ public class FormatadorLibraEsterlina extends FormatadorValor {
         return String.format("GBP %.2f", valor);
     }
 }
+
