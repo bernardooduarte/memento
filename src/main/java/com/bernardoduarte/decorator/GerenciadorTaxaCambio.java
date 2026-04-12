@@ -1,4 +1,4 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class GerenciadorTaxaCambio {
     }
 
     public void exibirPainel() {
-        System.out.println("=== Gerenciador de Taxa de Cambio (Bridge) ===");
+        System.out.println("=== Gerenciador de Taxa de Cambio (Decorator) ===");
         for (TaxaCambio taxa : taxas) {
             taxa.exibirInfo();
         }

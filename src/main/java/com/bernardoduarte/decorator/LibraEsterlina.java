@@ -1,4 +1,4 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 public class LibraEsterlina extends TaxaCambio {
 

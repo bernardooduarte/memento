@@ -1,10 +1,10 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BridgeApplicationTests {
+class DecoratorApplicationTests {
 
 	@Test
 	void contextLoads() {

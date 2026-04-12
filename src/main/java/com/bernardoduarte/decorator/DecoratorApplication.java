@@ -1,13 +1,13 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BridgeApplication {
+public class DecoratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BridgeApplication.class, args);
+		SpringApplication.run(DecoratorApplication.class, args);
 	}
 
 }

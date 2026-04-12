@@ -1,4 +1,4 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 public class LibraEsterlinaFactory extends TaxaCambioFactory {
     @Override
@@ -8,7 +8,7 @@ public class LibraEsterlinaFactory extends TaxaCambioFactory {
 
     @Override
     public FormatadorValor criarFormatadorValor() {
-        return new FormatadorLibraEsterlina();
+        return new FormatadorLibraEsterlina(new FormatadorBase());
     }
 }
 

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bernardoduarte</groupId>
-	<artifactId>bridge</artifactId>
+	<artifactId>decorator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

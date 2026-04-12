@@ -1,4 +1,4 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 public class EuroFactory extends TaxaCambioFactory {
     @Override
@@ -8,7 +8,7 @@ public class EuroFactory extends TaxaCambioFactory {
 
     @Override
     public FormatadorValor criarFormatadorValor() {
-        return new FormatadorEuro();
+        return new FormatadorEuro(new FormatadorBase());
     }
 }
 

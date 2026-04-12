@@ -1,4 +1,4 @@
-package com.bernardoduarte.bridge;
+package com.bernardoduarte.decorator;
 
 public class DolarAmericanoFactory extends TaxaCambioFactory {
     @Override
@@ -8,7 +8,7 @@ public class DolarAmericanoFactory extends TaxaCambioFactory {
 
     @Override
     public FormatadorValor criarFormatadorValor() {
-        return new FormatadorDolarAmericano();
+        return new FormatadorDolarAmericano(new FormatadorBase());
     }
 }
 
