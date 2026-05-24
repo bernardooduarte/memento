@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.memento;
 
 import java.util.Locale;
 
@@ -9,3 +9,5 @@ public class FormatadorBase extends FormatadorValor {
 		return String.format(Locale.US, "%.2f", valor);
 	}
 }
+
+

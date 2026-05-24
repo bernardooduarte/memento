@@ -1,6 +1,6 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.memento;
 
-public abstract class TaxaCambio {
+public class TaxaCambio {
 
 	protected String moeda;
 	protected double valorEmReais;
@@ -32,5 +32,14 @@ public abstract class TaxaCambio {
 		return formatador.formatar(valorEmReais);
 	}
 
-	public abstract String aceitar(TaxaCambioVisitor visitor);
+	public TaxaCambioEstado salvarEstado() {
+		return new TaxaCambioEstadoSalvo(moeda, valorEmReais);
+	}
+
+	public void restaurarEstado(TaxaCambioEstado estado) {
+		this.moeda = estado.getMoeda();
+		this.valorEmReais = estado.getValorEmReais();
+	}
 }
+
+
